@@ -12,6 +12,7 @@ import {
 import { CATEGORIES, type Category, type FoodItem, type Urgency } from "@/types/food";
 import styles from "./fridge-dashboard.module.css";
 import { TypewriterText } from "./typewriter-text";
+import { AdBanner } from "./ad-banner";
 
 const STORAGE_KEY = "fridge-24h.inventory.v1";
 const VOICE_PREF_KEY = "fridge-24h.voice.v1";
@@ -266,6 +267,8 @@ export function FridgeDashboard() {
           <span className={styles.reportNote}>利用できる声は端末・ブラウザで異なります</span>
         </div>
       </section>
+
+      <AdBanner />
 
       <section className={styles.stats} aria-label="在庫概況">
         <div><span>確認総数</span><strong>{counts.total}</strong><small>品</small></div>
