@@ -1,0 +1,33 @@
+{
+  "name": "冷蔵庫24時｜食材監視システム",
+  "short_name": "冷蔵庫24時",
+  "description": "冷蔵庫の中身を重厚なドキュメンタリー調で報告する、ちょっと大げさで実用的な食材管理アプリ。",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0b0d0c",
+  "theme_color": "#0b0d0c",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["food", "lifestyle", "utilities"],
+  "lang": "ja",
+  "dir": "ltr"
+}
