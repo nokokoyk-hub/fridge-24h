@@ -1,11 +1,11 @@
 # Current State
 
-更新日：2026-06-21（JST）
-バージョン：0.5.1
+更新日：2026-06-22（JST）
+バージョン：0.5.2
 
 ## 状態
 
-初回MVPのローカル実装が完了。GitHubへのコミット・pushとVercel公開は未実施。
+初回MVPをGitHubの `main` で管理し、Vercel本番へ公開済み。公開URLは `https://fridge-24h.vercel.app`。
 
 ## 実装済み
 
@@ -25,6 +25,8 @@
 - 食品安全に関する注意表示
 - Next.js作業ルートの固定
 - PostCSS修正版の依存上書き
+- `vercel.json` によるNext.jsフレームワーク指定
+- Vercel Deployment Protection解除済み（一般公開）
 
 ## 検証結果
 
@@ -32,6 +34,7 @@
 - `npm run build`：成功
 - `npm audit --omit=dev`：脆弱性0件
 - 開発サーバー `/`：HTTP 200、主要文言のSSR出力を確認
+- Vercel本番URL：HTTP 200、「冷蔵庫24時」「本日の捜査報告」を確認
 
 ## 未検証・未実装
 
@@ -40,6 +43,7 @@
 - 複数端末同期、認証、通知、PWA、写真／バーコード登録
 - データの編集、バックアップ、復元
 - GitHub Actions CI
+- 広告サービスの選定・審査・実装
 
 ## データ仕様
 

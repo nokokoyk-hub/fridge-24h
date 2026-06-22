@@ -4,7 +4,7 @@
 
 1. `NORTH_STAR.md`
 2. `docs/current_state.md`
-3. 最新の `docs/work-digest-2026-06-21.md`
+3. 最新の `docs/work-digest-2026-06-22.md`
 
 ## 開始手順
 
@@ -17,8 +17,8 @@ npm run dev
 
 1. 実ブラウザでPC／スマホ幅の見た目を確認
 2. タイプ表示速度、食材追加、フィルター、消費済み、再読込後の保持、ナレーター選択、重低音、音声再生、「別の報告」を操作確認
-3. 問題がなければ意図したファイルだけをコミットしてGitHubへpush
-4. Vercelプレビューへデプロイ
+3. 広告サービスの規約・Vercelサブドメイン対応・収益条件を比較して選定
+4. 広告導入前にプライバシーポリシー、Cookie・外部送信表示、同意導線を設計
 
 ## 注意点
 
@@ -32,3 +32,5 @@ npm run dev
 - ブラウザ音声には男女メタデータがないため、音声名による低音候補判定は補助扱い。実機で本人が選べる導線を維持する。
 - タイプ演出の速度は `src/components/typewriter-text.tsx` の `CHARACTER_INTERVAL_MS` で管理する。
 - タイプ演出を文字ごとのCSSアニメーションへ戻さない。長文で描画欠落が再発する可能性がある。
+- Vercel本番は `https://fridge-24h.vercel.app`。`vercel.json` の `framework: nextjs` を削除すると404が再発する可能性がある。
+- Vercelプロジェクトは一般公開設定。再びDeployment Protectionを有効にすると閲覧者に認証を求めるため、変更時は公開方針を確認する。
