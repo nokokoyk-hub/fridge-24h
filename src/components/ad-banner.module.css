@@ -1,0 +1,70 @@
+.sponsor {
+  position: relative;
+  width: min(1120px, calc(100% - 40px));
+  margin-inline: auto;
+  padding: 20px 24px;
+  border: 1px dashed #2b302c;
+  background: rgba(15, 18, 16, 0.6);
+}
+
+.label {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.kicker {
+  color: #959791;
+  font: 600 9px/1 var(--font-geist-mono), monospace;
+  letter-spacing: 0.18em;
+}
+
+.title {
+  color: #6e726c;
+  font: 700 11px/1 var(--font-noto-serif-jp), serif;
+  letter-spacing: 0.1em;
+}
+
+.slot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60px;
+}
+
+/* A8バナー内の画像が枠からはみ出さないようにする */
+.slot img {
+  max-width: 100%;
+  height: auto;
+}
+
+.placeholder {
+  color: #3e433e;
+  font: 600 12px/1.4 var(--font-geist-mono), monospace;
+  letter-spacing: 0.12em;
+}
+
+.ad {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  padding: 2px 6px;
+  border: 1px solid #2b302c;
+  color: #4a4e49;
+  font: 700 8px/1 var(--font-geist-mono), monospace;
+  letter-spacing: 0.08em;
+}
+
+@media (max-width: 580px) {
+  .sponsor {
+    width: min(100% - 24px, 1120px);
+    padding: 16px 14px;
+  }
+
+  .label {
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+  }
+}
