@@ -1,0 +1,36 @@
+.typewriter,
+.visualText {
+  white-space: pre-wrap;
+}
+
+.screenReaderText {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.cursor {
+  display: inline-block;
+  width: 0.48em;
+  height: 0.95em;
+  margin-left: 0.1em;
+  vertical-align: -0.08em;
+  background: #d8ff3e;
+  box-shadow: 0 0 14px rgba(216, 255, 62, 0.42);
+  animation: cursorBlink 720ms steps(1, end) infinite;
+}
+
+@keyframes cursorBlink {
+  0%, 48% { opacity: 1; }
+  49%, 100% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor { display: none; }
+}

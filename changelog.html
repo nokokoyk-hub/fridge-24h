@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>冷蔵庫24時 更新履歴</title>
+    <style>
+      body { max-width: 760px; margin: 0 auto; padding: 48px 24px; color: #eceee8; background: #0c0e0d; font: 16px/1.8 system-ui, sans-serif; }
+      h1 { color: #d8ff3e; } h2 { margin-top: 40px; } time { color: #999f98; } code { color: #d8ff3e; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>冷蔵庫24時 更新履歴</h1>
+      <article>
+        <h2>v0.5.1 — タイプ表示の安定化</h2>
+        <time datetime="2026-06-21">2026年6月21日</time>
+        <ul>
+          <li>長文で一部文字が消えることがある問題を修正</li>
+          <li>文字数分のCSSアニメーションから単一タイマー方式へ変更</li>
+          <li>スクリーンリーダー向け全文読み上げを維持</li>
+        </ul>
+      </article>
+      <article>
+        <h2>v0.5.0 — 監視端末タイプ演出</h2>
+        <time datetime="2026-06-21">2026年6月21日</time>
+        <ul>
+          <li>報告文を一文字ずつ表示するタイプ演出を追加</li>
+          <li>報告変更時のアニメーション再生と端末カーソルを追加</li>
+          <li>スクリーンリーダーと動きを減らすOS設定へ対応</li>
+          <li>演出を専用コンポーネントへ分離</li>
+        </ul>
+      </article>
+      <article>
+        <h2>v0.4.0 — 重低音ナレーター</h2>
+        <time datetime="2026-06-20">2026年6月20日</time>
+        <ul>
+          <li>端末で利用可能な日本語音声の選択機能を追加</li>
+          <li>低音候補を優先する自動選択を追加</li>
+          <li>速度と音程を調整する重低音ON/OFFを追加</li>
+          <li>選択した音声設定の端末内保存を追加</li>
+          <li>音声が遅れて読み込まれるブラウザにも対応</li>
+        </ul>
+      </article>
+      <article>
+        <h2>v0.3.0 — もりもりナレーション</h2>
+        <time datetime="2026-06-20">2026年6月20日</time>
+        <ul>
+          <li>実況の基礎フレーズを68本へ増量</li>
+          <li>開始・事件本編・締めを独立して抽選する構造へ変更</li>
+          <li>状況ごとに最大1,152通りの組み合わせへ拡張</li>
+          <li>台本を専用ファイルへ分離し、追加しやすさを改善</li>
+          <li>多数の要注意食材がある場合に読み上げが長くなりすぎない要約を追加</li>
+        </ul>
+      </article>
+      <article>
+        <h2>v0.2.0 — 実況バリエーション</h2>
+        <time datetime="2026-06-20">2026年6月20日</time>
+        <ul>
+          <li>在庫状況別に全20パターンの実況台本を追加</li>
+          <li>再読込と在庫変更時に台本が変わる仕組みを追加</li>
+          <li>任意に言い直させる「別の報告」ボタンを追加</li>
+          <li>音声再生中の台本変更を安全に停止する処理を追加</li>
+        </ul>
+      </article>
+      <article>
+        <h2>v0.1.0 — 初回MVP</h2>
+        <time datetime="2026-06-20">2026年6月20日</time>
+        <ul>
+          <li>食材登録、消費済み処理、期限別フィルターを追加</li>
+          <li>期限ステータスと庫内概況を追加</li>
+          <li>在庫に応じた重厚ドキュメンタリー調の報告を追加</li>
+          <li>ブラウザ標準音声による日本語読み上げを追加</li>
+          <li>端末内保存とレスポンシブUIを追加</li>
+          <li>食品安全の注意表示と依存関係の安全対策を追加</li>
+        </ul>
+      </article>
+    </main>
+  </body>
+</html>
